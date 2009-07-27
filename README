@@ -3,14 +3,15 @@ ChineseRegions
 
 Provides all chinese regions, cities and districts
 
-USAGE
-=====
+INSTALL
+=======
 
-After installing this plugin, run
+  script/plugin install git://github.com/flyerhzm/chinese_regions.git
 
   rake db:migrate
 
-Then, you can use
+USAGE
+=====
 
   Region.all => ['北京市', '山东省', '广西壮族自治区', ...]
   City.all => ['北京市', '杭州市', '上海市', ...]
