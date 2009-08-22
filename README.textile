@@ -1,0 +1,27 @@
+h1. ChineseRegions
+
+Provides all chinese regions, cities and districts
+
+***************************************************************************
+
+h2. INSTALL
+
+<pre><code>
+script/plugin install git://github.com/flyerhzm/chinese_regions.git
+rake db:migrate
+</code></pre>
+
+****************************************************************************
+
+h2. USAGE
+
+<pre><code>
+Region.all => ['北京市', '山东省', '广西壮族自治区', ...]
+City.all => ['北京市', '杭州市', '上海市', ...]
+District.all => ['西城区', '静安区', '西湖区', ...]
+Region.find(11).cities => ['杭州市', '宁波市', '温州市', ...]
+City.find(73).districts => ['黄浦区','卢湾区', '徐汇区', ...]
+</code></pre>
+
+
+Copyright (c) 2009 Richard Huang (flyerhzm@gmail.com), released under the MIT license
